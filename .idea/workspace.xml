@@ -1,0 +1,743 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="afd6e309-f6b3-4c3a-9357-2449180a6bed" name="Default" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="demoMLT1.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/demoMLT1.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="373">
+              <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="strategy.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/strategy.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="660">
+              <caret line="47" column="16" lean-forward="false" selection-start-line="47" selection-start-column="16" selection-end-line="47" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>get_bollinger_bands</find>
+      <find>plot_data</find>
+      <find>get_rolling_mean</find>
+      <find>get</find>
+      <find>,,,,,</find>
+      <find>symbol_to_path</find>
+      <find>head()</find>
+      <find>rename</find>
+      <find>test_ma_crossover_strategy</find>
+      <find>df_ma</find>
+      <find>running_average</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>df</replace>
+    </replaceStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/data/Simple.csv" />
+        <option value="$PROJECT_DIR$/bollingerBand.py" />
+        <option value="$PROJECT_DIR$/fetch_data.py" />
+        <option value="$PROJECT_DIR$/strategy.py" />
+        <option value="$PROJECT_DIR$/compute.py" />
+        <option value="$PROJECT_DIR$/draw.py" />
+        <option value="$PROJECT_DIR$/demoMLT1.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-296" />
+    <option name="y" value="77" />
+    <option name="width" value="1209" />
+    <option name="height" value="830" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Python</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>PyPep8Inspection</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="mlt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mlt" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python tests.Nosetests in demoMLT1.py">
+    <configuration name="Nosetests in demoMLT1.py" type="tests" factoryName="Nosetests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="mlt" />
+      <option name="_new_regexPattern" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/demoMLT1.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+    </configuration>
+    <configuration name="fetch_data" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="mlt" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/fetch_data.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="Python tests.Nosetests in demoMLT1.py" />
+      <item index="1" class="java.lang.String" itemvalue="Python.fetch_data" />
+    </list>
+    <recent_temporary>
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="Python tests.Nosetests in demoMLT1.py" />
+        <item index="1" class="java.lang.String" itemvalue="Python.fetch_data" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="afd6e309-f6b3-4c3a-9357-2449180a6bed" name="Default" comment="" />
+      <created>1508866329479</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1508866329479</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="Nosetests_in_demoMLT1_py - 2017.12.28 at 16h 48m 06s.xml">
+      <configuration name="Nosetests in demoMLT1.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Nosetests_in_demoMLT1_py - 2017.12.28 at 16h 48m 47s.xml">
+      <configuration name="Nosetests in demoMLT1.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Nosetests_in_demoMLT1_py - 2017.12.28 at 16h 49m 04s.xml">
+      <configuration name="Nosetests in demoMLT1.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Nosetests_in_demoMLT1_py - 2017.12.28 at 16h 50m 20s.xml">
+      <configuration name="Nosetests in demoMLT1.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Nosetests_in_demoMLT1_py - 2017.12.28 at 16h 50m 34s.xml">
+      <configuration name="Nosetests in demoMLT1.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Nosetests_in_demoMLT1_py - 2017.12.28 at 16h 51m 07s.xml">
+      <configuration name="Nosetests in demoMLT1.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Nosetests_in_demoMLT1_py - 2017.12.28 at 16h 51m 34s.xml">
+      <configuration name="Nosetests in demoMLT1.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Nosetests_in_demoMLT1_py - 2017.12.28 at 16h 51m 57s.xml">
+      <configuration name="Nosetests in demoMLT1.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Nosetests_in_demoMLT1_py - 2017.12.28 at 16h 53m 03s.xml">
+      <configuration name="Nosetests in demoMLT1.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Nosetests_in_demoMLT1_py - 2017.12.28 at 16h 55m 30s.xml">
+      <configuration name="Nosetests in demoMLT1.py" configurationId="tests" />
+    </history-entry>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-296" y="77" width="1209" height="830" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19272126" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28364116" sideWeight="0.24896608" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28364116" sideWeight="0.7510339" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22932331" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32957393" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="5" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/draw.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding>
+            <element signature="e#136#151#0" expanded="false" />
+            <element signature="e#217#421#0" expanded="false" />
+            <element signature="e#477#520#0" expanded="false" />
+            <element signature="e#897#1649#0" expanded="false" />
+            <element signature="e#1714#2504#0" expanded="false" />
+            <element signature="e#2533#2803#0" expanded="false" />
+            <element signature="e#2832#3203#0" expanded="false" />
+            <element signature="e#3224#3608#0" expanded="false" />
+            <element signature="e#3667#4329#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/compute.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="66" column="0" lean-forward="true" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+            <element signature="e#179#394#0" expanded="false" />
+            <element signature="e#440#524#0" expanded="false" />
+            <element signature="e#832#1090#0" expanded="false" />
+            <element signature="e#1130#1264#0" expanded="false" />
+            <element signature="e#1603#2442#0" expanded="false" />
+            <element signature="e#2504#2828#0" expanded="false" />
+            <element signature="e#2912#3354#0" expanded="false" />
+            <element signature="e#3377#3495#0" expanded="false" />
+            <element signature="e#3531#4455#0" expanded="false" />
+            <element signature="e#4491#5092#0" expanded="false" />
+            <element signature="e#5112#5127#0" expanded="false" />
+            <element signature="e#5162#5177#0" expanded="false" />
+            <element signature="e#5261#5971#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demoMLT1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="690">
+          <caret line="54" column="0" lean-forward="true" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/strategy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/draw.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding>
+            <element signature="e#136#151#0" expanded="false" />
+            <element signature="e#217#421#0" expanded="false" />
+            <element signature="e#477#520#0" expanded="false" />
+            <element signature="e#897#1649#0" expanded="false" />
+            <element signature="e#1714#2504#0" expanded="false" />
+            <element signature="e#2533#2803#0" expanded="false" />
+            <element signature="e#2832#3203#0" expanded="false" />
+            <element signature="e#3224#3608#0" expanded="false" />
+            <element signature="e#3667#4329#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/compute.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="14" column="38" lean-forward="false" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+            <element signature="e#179#394#0" expanded="false" />
+            <element signature="e#440#524#0" expanded="false" />
+            <element signature="e#832#1090#0" expanded="false" />
+            <element signature="e#1130#1264#0" expanded="false" />
+            <element signature="e#1603#2442#0" expanded="false" />
+            <element signature="e#2504#2828#0" expanded="false" />
+            <element signature="e#2912#3354#0" expanded="false" />
+            <element signature="e#3377#3495#0" expanded="false" />
+            <element signature="e#3531#4455#0" expanded="false" />
+            <element signature="e#4491#5092#0" expanded="false" />
+            <element signature="e#5112#5127#0" expanded="false" />
+            <element signature="e#5162#5177#0" expanded="false" />
+            <element signature="e#5261#5971#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demoMLT1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/strategy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="5" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/draw.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="84" column="0" lean-forward="true" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
+          <folding>
+            <element signature="e#136#151#0" expanded="false" />
+            <element signature="e#217#421#0" expanded="false" />
+            <element signature="e#477#520#0" expanded="false" />
+            <element signature="e#897#1649#0" expanded="false" />
+            <element signature="e#1714#2504#0" expanded="false" />
+            <element signature="e#2533#2803#0" expanded="false" />
+            <element signature="e#2832#3203#0" expanded="false" />
+            <element signature="e#3224#3608#0" expanded="false" />
+            <element signature="e#3667#4329#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/compute.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="19" column="16" lean-forward="false" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+            <element signature="e#179#394#0" expanded="false" />
+            <element signature="e#440#524#0" expanded="false" />
+            <element signature="e#832#1090#0" expanded="false" />
+            <element signature="e#1130#1264#0" expanded="false" />
+            <element signature="e#1603#2442#0" expanded="false" />
+            <element signature="e#2504#2828#0" expanded="false" />
+            <element signature="e#2912#3354#0" expanded="false" />
+            <element signature="e#3377#3495#0" expanded="false" />
+            <element signature="e#3531#4455#0" expanded="false" />
+            <element signature="e#4491#5092#0" expanded="false" />
+            <element signature="e#5112#5127#0" expanded="false" />
+            <element signature="e#5162#5177#0" expanded="false" />
+            <element signature="e#5261#5971#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demoMLT1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/draw.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="123" column="0" lean-forward="true" selection-start-line="123" selection-start-column="0" selection-end-line="123" selection-end-column="0" />
+          <folding>
+            <element signature="e#136#151#0" expanded="false" />
+            <element signature="e#217#421#0" expanded="false" />
+            <element signature="e#477#520#0" expanded="false" />
+            <element signature="e#897#1649#0" expanded="false" />
+            <element signature="e#1714#2504#0" expanded="false" />
+            <element signature="e#2533#2803#0" expanded="false" />
+            <element signature="e#2832#3203#0" expanded="false" />
+            <element signature="e#3224#3608#0" expanded="false" />
+            <element signature="e#3667#4329#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/compute.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+            <element signature="e#179#394#0" expanded="false" />
+            <element signature="e#440#524#0" expanded="false" />
+            <element signature="e#832#1090#0" expanded="false" />
+            <element signature="e#1130#1264#0" expanded="false" />
+            <element signature="e#1603#2442#0" expanded="false" />
+            <element signature="e#2504#2828#0" expanded="false" />
+            <element signature="e#2912#3354#0" expanded="false" />
+            <element signature="e#3377#3495#0" expanded="false" />
+            <element signature="e#3531#4455#0" expanded="false" />
+            <element signature="e#4491#5092#0" expanded="false" />
+            <element signature="e#5112#5127#0" expanded="false" />
+            <element signature="e#5162#5177#0" expanded="false" />
+            <element signature="e#5261#5971#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demoMLT1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/draw.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding>
+            <element signature="e#136#151#0" expanded="false" />
+            <element signature="e#217#421#0" expanded="false" />
+            <element signature="e#477#520#0" expanded="false" />
+            <element signature="e#897#1649#0" expanded="false" />
+            <element signature="e#1714#2504#0" expanded="false" />
+            <element signature="e#2533#2803#0" expanded="false" />
+            <element signature="e#2832#3203#0" expanded="false" />
+            <element signature="e#3224#3608#0" expanded="false" />
+            <element signature="e#3667#4329#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fetch_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1035">
+          <caret line="75" column="55" lean-forward="false" selection-start-line="75" selection-start-column="55" selection-end-line="75" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demoMLT1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demoMLT1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fetch_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="29" column="36" lean-forward="false" selection-start-line="29" selection-start-column="36" selection-end-line="29" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demoMLT1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/INFY.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="7" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demoMLT1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/INFY.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="7" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Python/2.7/lib/python/site-packages/pandas/stats/moments.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="483" column="0" lean-forward="false" selection-start-line="483" selection-start-column="0" selection-end-line="483" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/NSE.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-17994">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/Simple.csv" />
+    <entry file="file://$PROJECT_DIR$/data/INFY.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="7" lean-forward="true" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/Sample1.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="37" lean-forward="false" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Python/2.7/lib/python/site-packages/pandas/core/indexes/datetimes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="2001" column="4" lean-forward="false" selection-start-line="2001" selection-start-column="4" selection-end-line="2001" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/SBIN2017-01-012017-01-10.csv" />
+    <entry file="file://$PROJECT_DIR$/data/TCS.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/RELIANCE2000-01-012017-06-30.csv" />
+    <entry file="file://$PROJECT_DIR$/data/RIL2000-01-012017-06-30.csv" />
+    <entry file="file://$PROJECT_DIR$/stock_data/AAPL.csv" />
+    <entry file="file://$PROJECT_DIR$/stock_data/RELIANCE.NS.csv" />
+    <entry file="file://$PROJECT_DIR$/data/RIL2000-01-012017-10-29.csv" />
+    <entry file="file://$PROJECT_DIR$/data/RELIANCE2000-01-012017-10-29.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="4428" column="37" lean-forward="false" selection-start-line="4428" selection-start-column="37" selection-end-line="4428" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/INFY2000-01-012017-10-29.csv" />
+    <entry file="file://$PROJECT_DIR$/nse_data/RELIANCEJOINED2000-01-012017-10-29.csv" />
+    <entry file="file://$USER_HOME$/Library/Python/2.7/lib/python/site-packages/pandas/core/ops.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="1233" column="0" lean-forward="false" selection-start-line="1233" selection-start-column="0" selection-end-line="1233" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yahoo_data/RELIANCE.NS.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-18053">
+          <caret line="3243" column="19" lean-forward="true" selection-start-line="3243" selection-start-column="19" selection-end-line="3243" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Python/2.7/site-packages/pandas_datareader/yahoo/daily.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="690">
+          <caret line="46" column="8" lean-forward="false" selection-start-line="46" selection-start-column="8" selection-end-line="46" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Python/2.7/site-packages/pandas_datareader/data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="394">
+          <caret line="117" column="21" lean-forward="true" selection-start-line="117" selection-start-column="21" selection-end-line="117" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///System/Library/Frameworks/Python.framework/Versions/2.7/Extras/lib/python/numpy/core/numeric.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="378" column="0" lean-forward="false" selection-start-line="378" selection-start-column="0" selection-end-line="378" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nse_data/RELIANCE2000-01-012017-10-29.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48585">
+          <caret line="3239" column="75" lean-forward="false" selection-start-line="3239" selection-start-column="75" selection-end-line="3239" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fetch_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="24" column="26" lean-forward="true" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/z_old_code.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="98" column="14" lean-forward="false" selection-start-line="98" selection-start-column="14" selection-end-line="98" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/draw.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="40" column="19" lean-forward="false" selection-start-line="40" selection-start-column="19" selection-end-line="40" selection-end-column="19" />
+          <folding>
+            <element signature="e#136#151#0" expanded="false" />
+            <element signature="e#217#421#0" expanded="false" />
+            <element signature="e#477#520#0" expanded="false" />
+            <element signature="e#897#1649#0" expanded="false" />
+            <element signature="e#1714#2504#0" expanded="false" />
+            <element signature="e#2533#2803#0" expanded="false" />
+            <element signature="e#2832#3203#0" expanded="false" />
+            <element signature="e#3224#3608#0" expanded="false" />
+            <element signature="e#3667#4329#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/compute.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="447">
+          <caret line="83" column="4" lean-forward="false" selection-start-line="83" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+            <element signature="e#179#394#0" expanded="false" />
+            <element signature="e#440#524#0" expanded="false" />
+            <element signature="e#832#1090#0" expanded="false" />
+            <element signature="e#1130#1264#0" expanded="false" />
+            <element signature="e#1603#2442#0" expanded="false" />
+            <element signature="e#2504#2828#0" expanded="false" />
+            <element signature="e#2912#3354#0" expanded="false" />
+            <element signature="e#3377#3495#0" expanded="false" />
+            <element signature="e#3531#4455#0" expanded="false" />
+            <element signature="e#4491#5092#0" expanded="false" />
+            <element signature="e#5112#5127#0" expanded="false" />
+            <element signature="e#5162#5177#0" expanded="false" />
+            <element signature="e#5261#5971#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/strategy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="47" column="16" lean-forward="false" selection-start-line="47" selection-start-column="16" selection-end-line="47" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demoMLT1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="373">
+          <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
