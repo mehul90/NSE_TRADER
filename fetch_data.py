@@ -21,26 +21,26 @@ def get_data_for_symbol(symbol, yahoo_symbol, startDate, endDate):
         os.makedirs(directory)
 
     fileName = directory+'/'+symbol+str(startDate)+str(endDate)+'.csv'
-    print fileName
+    print(fileName)
     allow_reading_file = True
     if os.path.isfile(fileName) and allow_reading_file:
         # check symbol_date.csv, if present, read and return it
-        print 'reading from file:  '+fileName
+        print('reading from file:  '+fileName)
         df_temp = pd.read_csv(fileName, index_col='Date',
                               parse_dates=True, na_values=['nan'])
 
         return df_temp
     else:
-        print 'fetching data from API for '+symbol
+        print('fetching data from API for '+symbol)
         # get data from API
 
         # doesn't return ALL data !!
         stock_data = nsepy.get_history(symbol=symbol,
                                        start=startDate,
                                        end=endDate)
-        print 'stock_data from NSE'
-        print stock_data.shape
-        print stock_data.head()
+        print('stock_data from NSE')
+        print(stock_data.shape)
+        print(stock_data.head())
 
         # get adjusted close from yahoo.
         df_temp = __download_data([yahoo_symbol],startDate, endDate)
@@ -78,22 +78,22 @@ def __download_data(ticker,start,end,write_to_file=False):
 
     if write_to_file:
         final_df.to_csv(filename)
-        print filename
-    print 'final_df from Yahoo is:'
-    print final_df.shape
-    print final_df.head()
+        print(filename)
+    print('final_df from Yahoo is:')
+    print(final_df.shape)
+    print(final_df.head())
 
     return final_df
 
 
 def list_available_symbols():
-    print 'pending listAvailableSymbols'
+    print('pending listAvailableSymbols')
     #list as table NSE symbol and matching Yahoo symbol.
     #possiblly save to file as well.
 
 
 def update_data_for_symbol(symbol):
-    print 'pending'
+    print('pending')
     #read file, get data from last date to current date
     #append data to file.
 
@@ -101,5 +101,5 @@ def update_data_for_symbol(symbol):
 if __name__ == '__main__':
     startDate = datetime.date(2000, 1, 1)
     endDate = datetime.date.today()
-    print __download_data(['RELIANCE.NS'],startDate,endDate).head()
+    print(__download_data(['RELIANCE.NS'],startDate,endDate).head())
     # get_data_for_symbol('RELIANCE', 'RELIANCE.NS', startDate, endDate)

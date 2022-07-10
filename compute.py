@@ -7,17 +7,17 @@ import numpy as np
 
 def daily_returns(df):
     # how to read/interpret this ?
-    print df.head()
+    print(df.head())
     # (tomorrow price/today price) - 1
     daily_return = (df / df.shift(1)) - 1
-    print daily_return.head()
+    print(daily_return.head())
     daily_return.ix[0, :] = 0
     return daily_return
 
 
 def normalize(df, column='Adj Close'):
     # take column, normalize from earliest available date.
-    print 'pending normalize'
+    print('pending normalize')
 
 
 # moving average.
@@ -33,13 +33,13 @@ def rolling_std_mean(values, window):
     """Return rolling mean of given values, using specified window size."""
     # take df, column name option, default value for window too.
     # return pd.rolling_std(values, window=window, center=False).mean()
-    return pd.rolling_mean(values, window=window)
-
+    # return pd.rolling_mean(values, window=window)
+    return values.rolling(window).mean()
 
 def rolling_std(values, window):
     """Return rolling standard deviation of given values, using specified window size."""
-    return pd.rolling_std(values, window=window)
-
+    # return pd.rolling_std(values, window=window)
+    return values.rolling(window).std()
 
 def bollinger_bands(rm, rstd):
     """Return upper and lower Bollinger Bands."""
@@ -157,11 +157,11 @@ def money_flow_index(df, n):
 
 
 def CCI(df):
-    print 'pending'
+    print('pending')
 
 
 def Williams_percent_r(df):
-    print 'pending'
+    print('pending')
 
 
 # ---------------------------------------------

@@ -79,12 +79,10 @@ def Bollinger_Band(df):
         elif upper_cutoff_set_once and row['Adj Close'] < row['Lower Band']:
             last_stance = -1
 
-        df.set_value(index, 'Stance', last_stance)
+        df.at[index, 'Stance']= last_stance
 
     compute.accumulated_close(df)
 
 
 def MACD(df):
-    print 'Pending.'
-
-
+    print('Pending.')

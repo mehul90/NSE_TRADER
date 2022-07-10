@@ -9,7 +9,7 @@ if __name__ == '__main__':
 
 
 def test_draw():
-    print 'pending'
+    print('pending')
 
 
 def coloumn(df, title="Adj Close", columns=['Adj Close']):
@@ -38,7 +38,7 @@ def histogram_on_daily_returns(df):
 
 
 def histogram_on_RSI(df):
-    print 'pending'
+    print('pending')
 
 
 def bollinger_bands_from_df(df, symbol='Adj Close'):
@@ -105,7 +105,7 @@ def sma(df, days=21):
 
 def rsi(df, days=14):
     df_RSI = compute.RSI(df[['Adj Close']], days)
-    print df_RSI.head()
+    print(df_RSI.head())
     ax = df_RSI.plot(title='RSI', fontsize=12, color='r')
     # df['Adj Close'].plot(title='Close', ax=ax)
     ax.set_xlabel("Date")
@@ -119,8 +119,8 @@ def rsi(df, days=14):
 
 def macd(df):
     df_macd = compute.MACD(df[['Close']])
-    print df_macd.head()
-    print df_macd.shape
+    print(df_macd.head())
+    print(df_macd.shape)
     ax = df_macd['Crossover'].plot(title='Crossover', color='b')
     # df_macd['26 ema'].plot(title='MACD', fontsize=12, ax=ax, color='r')
     # df_macd['12 ema'].plot(title='12 ema', ax=ax, color='g')
