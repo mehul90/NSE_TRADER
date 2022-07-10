@@ -4,8 +4,8 @@ import matplotlib.pyplot as plt
 import compute
 
 
-if __name__ == '__main__':
-    test_draw()
+# if __name__ == '__main__':
+#     test_draw()
 
 
 def test_draw():
@@ -14,7 +14,7 @@ def test_draw():
 
 def coloumn(df, title="Adj Close", columns=['Adj Close']):
     """Plot stock prices with a custom title and meaningful axis labels."""
-    ax = df[columns].plot(title=title, fontsize=12)
+    ax = df[columns].plot(title=title, fontsize=12, x='Date')
     ax.set_xlabel("Date")
     ax.set_ylabel(title)
     plt.grid()
@@ -139,7 +139,7 @@ def strategy_results(df, title='Strategy Results'):
     pct_change = result_series.values[0]*100
     txn_count = df['Stance'].diff().value_counts().drop([0]).sum()
 
-    ax = df[['Adj Close', 'Accumulated Close']].plot(title=title, fontsize=12)
+    ax = df[['Adj Close', 'Accumulated Close', 'Date']].plot(title=title, fontsize=12, x="Date")
     ax.set_xlabel("Date")
     ax.set_ylabel('Close Prices')
 

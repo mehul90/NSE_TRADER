@@ -13,7 +13,7 @@ import strategy
 # get , compute , draw.
 
 
-def test_run():
+def compare_results():
     startDate = datetime.date(2000, 1, 1)
     endDate = datetime.date(2022, 7, 1)
     # endDate = datetime.date.today()
@@ -24,14 +24,14 @@ def test_run():
     # strategy.RSI(df)
     # draw.strategy_results(df, title='RSI Strategy')
 
-    # strategy.SMA_Crossover(df)
-    # draw.strategy_results(df)
-
-    strategy.Bollinger_Band(df)
+    strategy.sma_crossover(df, fast=21, slow=5)
     draw.strategy_results(df)
 
-    draw.coloumn(df, title="Stance", columns=['Stance'])  # buy-sell signals for the strategy.
+    # strategy.Bollinger_Band(df)
+    # draw.strategy_results(df)
+
+    draw.coloumn(df, title="Stance", columns=['Stance', 'Date'])  # buy-sell signals for the strategy.
 
 
 if __name__ == "__main__":
-    test_run()
+    compare_results()

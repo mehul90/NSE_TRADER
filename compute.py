@@ -1,6 +1,9 @@
 import pandas as pd
 import datetime
 import numpy as np
+from ta.momentum import rsi
+from ta.volatility import BollingerBands
+from ta.trend import sma_indicator
 
 #https://github.com/nlsdfnbch/pandas-technical-indicators/blob/master/technical_indicators.py
 
@@ -48,6 +51,11 @@ def bollinger_bands(rm, rstd):
     lower_band = rm - rstd * 2  # pd.rolling_std(values, window=window)
     return upper_band, lower_band
 
+def ta_bollinger_bands(close, period=20):
+    indicator_bb = BollingerBands(close=close, window=period, window_dev=2)
+    upper_band = indicator_bb.bollinger_hband()
+    lower_band = indicator_bb.bollinger_lband()
+    return upper_band, lower_band
 
 def RSI(series, period):
     # print series.size
@@ -62,13 +70,16 @@ def RSI(series, period):
     u = u.drop(u.index[:(period-1)])
     d[d.index[period-1]] = np.mean( d[:period] ) #first value is sum of avg losses
     d = d.drop(d.index[:(period-1)])
-    rs = pd.stats.moments.ewma(u, com=period-1, adjust=False) / \
-    pd.stats.moments.ewma(d, com=period-1, adjust=False)
+    rs = pd.stats.moments.ewma(u, com=period-1, adjust=False) / pd.stats.moments.ewma(d, com=period-1, adjust=False)
     df = pd.DataFrame(100 - 100 / (1 + rs))
 
     # slice first period dates, create series with 50 as value, per date. then concat.
     prefixed_values = pd.Series(50, index=series.index.values[0:period])
     return pd.concat([prefixed_values, df.ix[:, 0]])
+
+def ta_RSI(series, period):
+    rsi_series = rsi(series, window=period, fillna=True)
+    return rsi_series
 
 
 def MACD(df, fast_ma=26, slow_ma=12, signal_period=9):
@@ -172,15 +183,26 @@ def accumulated_close(df):
 
     pointer = df.iloc[0]   #first date as index.
     booked_profit = 0.00
+    inTrade = False
 
     for index, row in df.iterrows():
         if row['Stance'] > 0:
-            df.loc[index, 'Accumulated Close'] = df.loc[index, 'Adj Close'] + booked_profit
-            pointer = index
+            df.loc[index, 'Accumulated Close'] = df.loc[index-1, 'Accumulated Close']
+            if inTrade:
+                continue
+            else:
+                pointer = index
+                inTrade = True
             # print 'Buy and hold'
         elif row['Stance'] < 0:
-            df.loc[index, 'Accumulated Close'] = df.loc[pointer, 'Accumulated Close']
-            booked_profit = df.loc[pointer, 'Accumulated Close'] - df.loc[index, 'Adj Close']
+            df.loc[index, 'Accumulated Close'] = df.loc[index-1, 'Accumulated Close']
+            if inTrade:
+                inTrade = False
+                booked_profit = df.loc[index, 'Adj Close'] - df.loc[pointer, 'Adj Close']
+                df.loc[index, 'Accumulated Close'] += booked_profit
+            else:
+                continue
+
             # print 'Sell and hold'
         else:
             df.loc[index, 'Accumulated Close'] = df.loc[index, 'Adj Close']
