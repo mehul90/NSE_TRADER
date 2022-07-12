@@ -46,7 +46,8 @@ def sma_crossover(df, fast=21, slow=9):
         else:
             break
 
-    compute.accumulated_close(df)
+    df = compute.accumulated_close(df)
+    return df
 
 
 def RSI(df, lowerCutoff=30, upperCutoff=70, period=14):
@@ -67,7 +68,8 @@ def RSI(df, lowerCutoff=30, upperCutoff=70, period=14):
 
         df.at[index, 'Stance'] = last_stance
 
-    compute.accumulated_close(df)
+    df = compute.accumulated_close(df)
+    return  df
 
 
 def Bollinger_Band(df):
@@ -101,7 +103,8 @@ def Bollinger_Band(df):
 
         df.at[index, 'Stance'] = last_stance
 
-    compute.accumulated_close(df)
+    df = compute.accumulated_close(df)
+    return df
 
 
 def MACD(df):

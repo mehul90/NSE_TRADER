@@ -135,11 +135,12 @@ def strategy_results(df, title='Strategy Results'):
     # print df.tail(1)
     last_row = df.tail(1)
 
-    result_series = last_row['Accumulated Close']/last_row['Adj Close']
+    result_series = last_row['Accumulated Close']/last_row['Norm Close']
     pct_change = result_series.values[0]*100
     txn_count = df['Stance'].diff().value_counts().drop([0]).sum()
+    print(df[['Accumulated Close', 'Norm Close']].tail(1))
 
-    ax = df[['Adj Close', 'Accumulated Close', 'Date']].plot(title=title, fontsize=12, x="Date")
+    ax = df[['Norm Close', 'Accumulated Close', 'Date']].plot(title=title, fontsize=12, x="Date")
     ax.set_xlabel("Date")
     ax.set_ylabel('Close Prices')
 

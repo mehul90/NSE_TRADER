@@ -18,17 +18,17 @@ def compare_results():
     endDate = datetime.date(2022, 7, 1)
     # endDate = datetime.date.today()
     # df = fetcher.get_data_for_symbol('RELIANCE', 'RELIANCE.NS', startDate, endDate)
-    df = pd.read_csv("nse_data/rel.csv")
+    df = pd.read_csv("nse_data/hdfc.csv")
     print(df.tail(1))
 
-    # strategy.RSI(df)
+    # df = strategy.RSI(df)
     # draw.strategy_results(df, title='RSI Strategy')
-
-    strategy.sma_crossover(df, fast=21, slow=5)
-    draw.strategy_results(df)
-
-    # strategy.Bollinger_Band(df)
+    #
+    # df = strategy.sma_crossover(df, fast=21, slow=5)
     # draw.strategy_results(df)
+
+    df = strategy.Bollinger_Band(df)
+    draw.strategy_results(df)
 
     draw.coloumn(df, title="Stance", columns=['Stance', 'Date'])  # buy-sell signals for the strategy.
 

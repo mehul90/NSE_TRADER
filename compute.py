@@ -18,6 +18,41 @@ def daily_returns(df):
     return daily_return
 
 
+class Trade:
+
+    def __init__(self, buy=None, sell=None):
+        self.active = None
+        self._buy = buy
+        self._sell = sell
+
+    @property
+    def buy(self):
+        return self._buy
+
+    @buy.setter
+    def buy(self,value):
+        self._buy = value
+        self.active = True
+
+    @property
+    def sell(self):
+        return self._sell
+
+    @sell.setter
+    def sell(self, value):
+        self._sell = value
+
+    def get_pnl(self):
+        if self.buy and self.sell:
+            return self.sell-self.buy
+        return 0
+
+    def close_trade(self):
+        self.active = False
+        self._buy = None
+        self._sell = None
+
+
 def normalize(df, column='Adj Close'):
     # take column, normalize from earliest available date.
     print('pending normalize')
@@ -180,31 +215,38 @@ def Williams_percent_r(df):
 
 def accumulated_close(df):
     # requires a column Stance, and Adj close
-
+    df = df.reset_index(drop=True)
+    first_value = df['Adj Close'].iloc[0]
+    multiplication_factor = ((100-first_value)/first_value)+1
+    df['Norm Close'] = df['Adj Close']*multiplication_factor
+    df['Accumulated Close'] = 100
     pointer = df.iloc[0]   #first date as index.
     booked_profit = 0.00
-    inTrade = False
+    trade = Trade()
 
     for index, row in df.iterrows():
+        if index == 0:
+            continue
         if row['Stance'] > 0:
-            df.loc[index, 'Accumulated Close'] = df.loc[index-1, 'Accumulated Close']
-            if inTrade:
-                continue
+            if trade.active:
+                df.loc[index, 'Accumulated Close'] = df.loc[index-1, 'Accumulated Close'] + (df.loc[index, 'Norm Close'] - df.loc[index-1, 'Norm Close'])
             else:
-                pointer = index
-                inTrade = True
+                trade.buy = row['Norm Close']
+                df.loc[index, 'Accumulated Close'] = df.loc[index - 1, 'Accumulated Close']
+                # pointer = index
             # print 'Buy and hold'
         elif row['Stance'] < 0:
-            df.loc[index, 'Accumulated Close'] = df.loc[index-1, 'Accumulated Close']
-            if inTrade:
-                inTrade = False
-                booked_profit = df.loc[index, 'Adj Close'] - df.loc[pointer, 'Adj Close']
-                df.loc[index, 'Accumulated Close'] += booked_profit
+            if trade.active:
+                trade.sell = row['Norm Close']
+                booked_profit = trade.get_pnl()
+                trade.close_trade()
+                df.loc[index, 'Accumulated Close'] = df.loc[index - 1, 'Accumulated Close'] + booked_profit
             else:
-                continue
+                df.loc[index, 'Accumulated Close'] = df.loc[index - 1, 'Accumulated Close']
 
             # print 'Sell and hold'
         else:
-            df.loc[index, 'Accumulated Close'] = df.loc[index, 'Adj Close']
+            df.loc[index, 'Accumulated Close'] = df.loc[index-1, 'Accumulated Close']
             # print 'Waiting...'
 
+    return df
