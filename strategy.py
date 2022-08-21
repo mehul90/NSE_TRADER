@@ -30,6 +30,7 @@ def SMA_Crossover(df, fast=42, slow=252):
     # df_ma['Market Returns'] = np.log(df_ma['Adj Close'] / df_ma['Adj Close'].shift(1))
     # df_ma['Strategy'] = df_ma['Market Returns'] * df_ma['Stance'].shift(1)
 
+
 def sma_crossover(df, fast=21, slow=9):
     df['fast'] = compute.sma_indicator(df['Close'], window=fast)
     df['slow'] = compute.sma_indicator(df['Close'], window=slow)
@@ -69,7 +70,7 @@ def RSI(df, lowerCutoff=30, upperCutoff=70, period=14):
         df.at[index, 'Stance'] = last_stance
 
     df = compute.accumulated_close(df)
-    return  df
+    return df
 
 
 def Bollinger_Band(df):
@@ -107,5 +108,38 @@ def Bollinger_Band(df):
     return df
 
 
-def MACD(df):
-    print('Pending.')
+def macd(df, fast=12, slow=26, signal=9):
+    macd_ = compute.MACD(df['Adj Close'], window_fast=fast, window_slow=slow, window_sign=signal)
+    df['macd_line'] = macd_.macd()
+    df['macd_signal'] = macd_.macd_signal()
+
+    df['Stance'] = 0
+    last_instance = 0
+    for index, row in df.iterrows():
+        if row['macd_signal'] > row['macd_line']:
+            last_instance = 1
+        elif row['macd_signal'] < row['macd_line']:
+            last_instance = -1
+
+        df.at[index, 'Stance'] = last_instance
+
+    df = compute.accumulated_close(df)
+    return df
+
+
+def ema_crossover(df, fast=9, slow=26):
+    df[f'ema_{fast}'] = compute.EMAIndicator(df['Adj Close'], window=fast).ema_indicator()
+    df[f'ema_{slow}'] = compute.EMAIndicator(df['Adj Close'], window=slow).ema_indicator()
+
+    df['Stance'] = 0
+    last_instance = 0
+    for index, row in df.iterrows():
+        if row[f'ema_{fast}'] > row[f'ema_{slow}']:
+            last_instance = 1
+        elif row[f'ema_{fast}'] < row[f'ema_{slow}']:
+            last_instance = -1
+
+        df.at[index, 'Stance'] = last_instance
+
+    df = compute.accumulated_close(df)
+    return df
