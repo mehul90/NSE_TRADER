@@ -8,12 +8,12 @@ import scipy.optimize as spo
 
 
 def main():
-    print "Start"
-    dfINFY = pd.read_csv("XNSE-INFY.csv", index_col='Date')
+    print("Start")
+    dfINFY = pd.read_csv("XNSE-INFY.csv", index_col="Date")
     # print dfINFY
     # print dfINFY.ix['2011-12-30':'2011-12-27'] #row slice
 
-    dfINFY.ix['2012-09-24':'2011-12-27', ['High', 'Low']].plot()  # row-column slice
+    dfINFY.ix["2012-09-24":"2011-12-27", ["High", "Low"]].plot()  # row-column slice
     plt.show()
 
 
@@ -39,9 +39,14 @@ def get_data(symbols, dates):
     #     symbols.insert(0, 'SPY')
 
     for symbol in symbols:
-        df_temp = pd.read_csv(symbol_to_path(symbol), index_col='Date',
-                              parse_dates=True, usecols=['Date', 'Adj Close'], na_values=['nan'])
-        df_temp = df_temp.rename(columns={'Adj Close': symbol})
+        df_temp = pd.read_csv(
+            symbol_to_path(symbol),
+            index_col="Date",
+            parse_dates=True,
+            usecols=["Date", "Adj Close"],
+            na_values=["nan"],
+        )
+        df_temp = df_temp.rename(columns={"Adj Close": symbol})
         df = df.join(df_temp)
         # if symbol == 'INFY':  # drop dates SPY did not trade
         #     df = df.dropna(subset=["INFY"])
@@ -60,12 +65,12 @@ def compute_daily_returns(df):
 
 def plot_hist_on_daily_returns(df):
     df = compute_daily_returns(df)
-    mean_INFY = df['INFY'].mean()
-    std_INFY = df['INFY'].std()
-    print mean_INFY
-    print std_INFY
-    df['INFY'].hist(bins=50)
-    df['TCS'].hist(bins=50)
+    mean_INFY = df["INFY"].mean()
+    std_INFY = df["INFY"].std()
+    print(mean_INFY)
+    print(std_INFY)
+    df["INFY"].hist(bins=50)
+    df["TCS"].hist(bins=50)
     plt.axvline(mean_INFY)
     plt.axvline(std_INFY)
     plt.axvline(-std_INFY)
@@ -73,7 +78,7 @@ def plot_hist_on_daily_returns(df):
 
 
 def plot_scatter(df):
-    df.plot(kind='scatter', x='INFY', y='TCS')
+    df.plot(kind="scatter", x="INFY", y="TCS")
     plt.show()
 
 
@@ -91,10 +96,10 @@ def normalize_df(df):
 
 def test_run():
     # Define a date range
-    dates = pd.date_range('2017-01-02', '2017-09-22')
+    dates = pd.date_range("2017-01-02", "2017-09-22")
 
     # Choose stock symbols to read
-    symbols = ['INFY', 'TCS']
+    symbols = ["INFY", "TCS"]
 
     # Get stock data
     df = get_data(symbols, dates)
@@ -110,5 +115,5 @@ def test_run():
     plot_scatter(df)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     test_run()
